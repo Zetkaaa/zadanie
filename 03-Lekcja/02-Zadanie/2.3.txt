@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    cout << "Podaj dwie liczby: ";
+    int n, m;
+    cin >> n >> m;
+    char a;
+    cout << "Podaj dzialanie do wykonania: ";
+    cin >> a;
+    if (a == '-'){
+        cout << n-m;
+    }
+    else if (a == '+'){
+        cout << n+m;
+    }
+    else if (a == '/'){
+        if(m == 0){
+            cout << "Tak sie nie zrobi";
+        }
+        else{
+            cout << n/m;
+        }
+    }
+    else if (a == '*'){
+        cout << n*m;
+    }
+    else if (a == '%'){
+        if(m == 0){
+            cout << "Engine caput, ni da sie";
+        }
+        else{
+            cout << n%m;
+        }
+    }
+    return 0;
+}
